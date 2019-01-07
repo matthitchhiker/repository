@@ -10,7 +10,7 @@ import com.matthew.model.User;
 import com.matthew.repository.UserRepository;
 
 @SpringBootApplication
-public class AplplicationDriver {
+public class ApplicationDriver {
 
 	@Bean
 	public String setup(UserRepository userRepository) {
@@ -41,9 +41,9 @@ public class AplplicationDriver {
 		return "Done";
 	}
 	
-	private static final Logger logger = LoggerFactory.getLogger(AplplicationDriver.class);
+	private static final Logger logger = LoggerFactory.getLogger(ApplicationDriver.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(AplplicationDriver.class, args);
+		SpringApplication.run(ApplicationDriver.class, args);
 	}
 }
